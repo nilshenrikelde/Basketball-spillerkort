@@ -1,4 +1,81 @@
-* {
+/*CSS-reset`s: Setter margin til 0 og border-box for at border inkluderes i boks*/
+ {
   margin: 0;
   box-sizing: border-box;
+}
+
+/* Generisk innstilling for at images vises som block-elementer og maksimal størrelse på 100% (ikke større enn containeren det er i) */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Legger inn 100svh slik at siden alltid er like høy som skjermen uavhengig av klient */
+body {
+  min-height: 100svh;
+}
+/* Initierer flex-box*/
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Setter farge for all tekst  */
+h1,
+h2,
+h3,
+p {
+  color: whitesmoke;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.player-cards {
+  border: 1px solid black;
+}
+
+.card-container {
+  background-color: rgb(19, 1, 4);
+  display: flex;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.img-container {
+  border: 1px solid black;
+  width: 200px;
+}
+
+.details-container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.card-details {
+  border: 1px solid black;
+  display: flex;
+  /* justify-content: space-around;
+  width: 300px; */
+  gap: 40px;
+}
+
+.item {
+  text-align: center;
+  color: red;
+}
+
+.label {
+}
+
+.description {
+  margin-top: 20px;
 }
