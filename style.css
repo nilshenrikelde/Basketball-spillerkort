@@ -1,5 +1,5 @@
 /*CSS-reset`s: Setter margin til 0 og border-box for at border inkluderes i boks*/
- {
+* {
   margin: 0;
   box-sizing: border-box;
 }
@@ -28,54 +28,69 @@ h1,
 h2,
 h3,
 p {
-  color: whitesmoke;
+  color: rgb(10, 0, 0);
 }
 
 h1 {
-  color: red;
+  color: #e61e28;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* border: 1px solid black; */
 }
 
 h2 {
-  margin-bottom: 15px;
-}
-
-.player-cards {
-  border: 1px solid black;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  /* border: 1px solid black; */
 }
 
 .card-container {
-  background-color: rgb(19, 1, 4);
+  background-color: #d3d3d3;
   display: flex;
+  align-items: start;
   max-width: 500px;
-  border-radius: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 .img-container {
-  border: 1px solid black;
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  width: 400;
+  margin: 0px;
+  padding: 15px;
 }
 
 .details-container {
-  border: 1px solid black;
-  padding: 30px;
+  /* border: 1px solid black; */
+  padding: 10px px;
 }
 
 .card-details {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
-  /* justify-content: space-around;
-  width: 300px; */
+  justify-content: start;
+  align-items: center;
+  width: 300px;
   gap: 40px;
 }
 
-.item {
+.value {
   text-align: center;
-  color: red;
+  font-weight: 500;
+  color: #e61e28;
+  margin-bottom: 0px;
+  font-weight: bolder;
 }
 
 .label {
+  margin-bottom: 10px;
+  margin-top: 0px;
 }
 
-.description {
-  margin-top: 20px;
+.info {
+  margin-top: 0px;
+  /* border: 1px solid black; */
 }
